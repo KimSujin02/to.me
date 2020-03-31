@@ -1,7 +1,6 @@
 package com.to.me;
 
 public class MemberDTO {
-	private int num;
 	private String id;
 	private String pw;
 	private String name;
@@ -9,12 +8,7 @@ public class MemberDTO {
 	private String birth;
 	private String pw_que;
 	private String pw_ans;
-	public int getNum() {
-		return num;
-	}
-	public void setNum(int num) {
-		this.num = num;
-	}
+	
 	public String getId() {
 		return id;
 	}
