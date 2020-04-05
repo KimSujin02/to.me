@@ -1,6 +1,7 @@
 package com.to.me;
 
 public interface Member {
+	
 	//회원가입하기
 	//중복아이디 있는지 확인하기
 	//로그인하기
