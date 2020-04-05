@@ -3,7 +3,7 @@ package com.to.me;
 import java.sql.*;
 import java.util.Vector;
 
-public class BoardDAO implements Board {
+public class BoardgroupDAO implements Boardgroup {
 
 	Connection conn;
 	PreparedStatement pstmt;
@@ -12,12 +12,12 @@ public class BoardDAO implements Board {
 
 	DBConnectionMgr dbcp;
 
-	public BoardDAO() { // 생성자
+	public BoardgroupDAO() { // 생성자
 		dbcp = DBConnectionMgr.getInstance();
 	}
 
 	@Override
-	public int insertBoard(BoardDTO boardgroupDTO) {
+	public int insertBoard(BoardgroupDTO boardgroupDTO) {
 		int result = 1; // 성공하면 1 / 실패하면 0
 		sql = "INSERT INTO board VALUES(?, ?, ?, ?, date_format(NOW(), '%Y%m%d%H%i%s'), ?, ?)";
 		try {
@@ -39,7 +39,7 @@ public class BoardDAO implements Board {
 	}
 
 	@Override
-	public int updateBoard(BoardDTO boardgroupDTO) {
+	public int updateBoard(BoardgroupDTO boardgroupDTO) {
 		int result = 1; // 성공하면 1 / 실패하면 0
 		
 		return result;
@@ -53,13 +53,13 @@ public class BoardDAO implements Board {
 	}
 
 	@Override
-	public BoardDTO selectBoard(String boardNum) {
+	public BoardgroupDTO selectBoard(String boardNum) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Vector<BoardDTO> listBoard(String groupNum) {
+	public Vector<BoardgroupDTO> listBoard(String groupNum) {
 		// TODO Auto-generated method stub
 		return null;
 	}

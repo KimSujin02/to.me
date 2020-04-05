@@ -3,7 +3,6 @@ package com.to.me;
 import java.util.Vector;
 
 public interface Group {
-	
 	//그룹 만들기
 	//그룹 탈퇴하기 (테이블 검사해서 그 그룹에 한 명도 안남게 되면 그룹이 사라진다.)
 	//그룹이름 바꾸기
