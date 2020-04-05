@@ -4,8 +4,9 @@ public class BoardDTO {
 	private int num;
 	private String content;
 	private String img;
-	private String writer;
 	private String date;
+	private String writer;
+	private int group_num;
 	private String ip;
 	
 	public int getNum() {
@@ -37,6 +38,12 @@ public class BoardDTO {
 	}
 	public void setWriter(String writer) {
 		this.writer = writer;
+	}
+	public int getGroup_num() {
+		return group_num;
+	}
+	public void setGroup_num(int group_num) {
+		this.group_num = group_num;
 	}
 	public String getIp() {
 		return ip;
